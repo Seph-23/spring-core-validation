@@ -14,7 +14,8 @@ public class MessageCodesResolverTest {
 
   @Test
   void messageCodesResolverObject() { //MessageCodesResolver 의 동작 방식 이해하기
-    String[] messageCodes = codesResolver.resolveMessageCodes("required", "item");
+    String[] messageCodes = codesResolver.resolveMessageCodes("required",
+      "item");
     for (String messageCode : messageCodes) {
       System.out.println("messageCode = " + messageCode);
     }
